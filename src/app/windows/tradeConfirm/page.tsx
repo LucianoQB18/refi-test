@@ -1,3 +1,4 @@
+"use client"
 import { InfoSection } from "@/app/components/info-section";
 import { PercentageSelector } from "@/app/components/percentage-selector";
 import { TradeCard } from "@/app/components/trade-card";
@@ -38,10 +39,13 @@ export default function TradeConfirm() {
 
         <InfoSection />
 
-        <button className="cursor-pointer bg-orange-500 w-full font-medium p-2 rounded-xl hover:bg-orange-600 transition">
+        <button
+          onClick={() => console.log("Botão de Trade clicado")}
+          className="cursor-pointer bg-orange-500 w-full font-medium p-2 rounded-xl hover:bg-orange-600 transition"
+        >
           Trade
         </button>
       </div>
     </div>
   );
-};
+}
