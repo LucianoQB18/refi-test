@@ -1,16 +1,14 @@
 import Link from "next/link";
 
-
 export default function Home() {
   return (
-    <div className="p-5 flex justify-center m-60">
-    <Link
-      href="/windows/tradeConfirm"
-      className="bg-orange-500 hover:bg-orange-600 text-white font-medium px-4 py-2 rounded-xl transition"
-    >
-      Ir para TradeConfirm
-    </Link>
+    <div className="min-h-screen flex items-center justify-center bg-white px-4">
+      <Link
+        href="/windows/tradeConfirm"
+        className="bg-orange-500 hover:bg-orange-600 text-white font-medium px-6 py-3 rounded-xl transition text-center animate-glow"
+      >
+        Go to TradeConfirm
+      </Link>
     </div>
-    
   );
 }
